@@ -5,21 +5,21 @@
 class Gopilot < Formula
   desc "Terminal-based AI coding assistant powered by Google Gemini"
   homepage "https://github.com/JakobAIOdev/GoPilot"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/JakobAIOdev/GoPilot/releases/download/v0.1.1/gopilot_0.1.1_darwin_amd64.tar.gz"
-      sha256 "38ea832559b10debc20e2f808ffb59a7629585b32c53ad3214c6f709d62615f3"
+      url "https://github.com/JakobAIOdev/GoPilot/releases/download/v0.1.2/gopilot_0.1.2_darwin_amd64.tar.gz"
+      sha256 "3ae9edf78c3a393ce72d2e158aadb27c5d2d13878429148ed4389dd48dcb7c7c"
 
       define_method(:install) do
         bin.install "gopilot"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/JakobAIOdev/GoPilot/releases/download/v0.1.1/gopilot_0.1.1_darwin_arm64.tar.gz"
-      sha256 "a45e41ff56ea7db3296bfa89585bae3f5751d203a9cfb3929ec7782b24098972"
+      url "https://github.com/JakobAIOdev/GoPilot/releases/download/v0.1.2/gopilot_0.1.2_darwin_arm64.tar.gz"
+      sha256 "43b41c999e9e709fe432baf7bc45b15e1fe2f7ba03e4e50b1903fdb290790e1f"
 
       define_method(:install) do
         bin.install "gopilot"
@@ -29,15 +29,15 @@ class Gopilot < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JakobAIOdev/GoPilot/releases/download/v0.1.1/gopilot_0.1.1_linux_amd64.tar.gz"
-      sha256 "698ff31dfb27c55e9f4d307f96b7cb66e3241dc8782839af1db5d5c8a104be11"
+      url "https://github.com/JakobAIOdev/GoPilot/releases/download/v0.1.2/gopilot_0.1.2_linux_amd64.tar.gz"
+      sha256 "5ef939fd5aeaa79a10c64b2804ad17a2bcf16c71e0bb1c1a0c0dcb0ea7fecb1d"
       define_method(:install) do
         bin.install "gopilot"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JakobAIOdev/GoPilot/releases/download/v0.1.1/gopilot_0.1.1_linux_arm64.tar.gz"
-      sha256 "1b21896b629d637a032e7fdc38c5569fecc1b36430d1b9eb72700f854037992c"
+      url "https://github.com/JakobAIOdev/GoPilot/releases/download/v0.1.2/gopilot_0.1.2_linux_arm64.tar.gz"
+      sha256 "1445d29362ccd7c0d33d821626a3c22fa679a2cd9480f768ee5b66f372adddae"
       define_method(:install) do
         bin.install "gopilot"
       end
